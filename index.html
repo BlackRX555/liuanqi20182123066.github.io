@@ -115,19 +115,36 @@
 								<article>
 									
 								        <header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
+										<span class="date">SARA</span>
+										<h2><a href="#">
+											2、学院公众号中，成绩查询模块可以很方便地使在校学生查询到期末考试成绩，特别是老师将期末成绩提交后，该模块会以弹窗的方式将信息通知到学生，
+											<br />
+										</a>问题：请根据滇池学院微信公众号中，学生成绩查询模块的功能，对该模块进行小组讨论分析，对该功能的类图中以下元素进行必要说明：</h2>
 									</header>
 									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<p>
+1.该功能一共应该包含哪几个类
+										
+答：该功能应该包含学生类、考试科目类、教师类、学校公众号系统类。
+										
+2.每个类的属性，方法应该是什么，有什么作用，权限该是什么
+										
+答：学生类共有5个属性：学号int、姓名string、性别string、专业string、系别string；操作有成绩下载、学期筛选、查看成绩；学号是私有属性，姓名、性别、专业、系别都是公有属性。
+考试科目类共有3个属性：课程名string、成绩int、学分int；操作有获取课程信息、获取课程成绩；成绩是私有属性，课程名和学分都是公有属性。
+教师类共有4个属性：教师号int、姓名string、性别string、所教课程string；操作有成绩下载、学期筛选、查看成绩、修改成绩、上传成绩；教师号是私有属性，姓名、性别、所教课程是公有属性。
+学校公众号系统类共有2个属性：账号int、密码int、权限int；操作有登录、退出、获取学生信息、获取教师信息、学期筛选、推送成绩。
+
+3.类之间分别有什么关系
+
+答：学生类、考试科目类、教师类这三个类和学校公众号系统类是依赖关系；学生类和考试科目课、教师类是关联关系；
+									</p>
 									<ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<span class="date">April 22, 2017</span>
+										<span class="date">BlackRx</span>
 										<h2><a href="#">Primis eget<br />
 										imperdiet lorem</a></h2>
 									</header>
